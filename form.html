@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body bgcolor="grey" text="">
+    <!-- in method attribute we have get(is not secure it will show in web page),post(issecured which will not seen in web page) -->
+    <!-- autocomplete is use to off the previous data present in web page -->
+    <form action="HTML\resume.html" method="get" target="_self" autocomplete="off">
+        <fieldset>
+        <table bgcolor="White">
+        
+            <tr>
+                <td><label for="abc">First Name</label></td>
+                <td><input type="text" id="abc" name="first name" placeholder="First Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="xyz">Last Name</label></td>
+                <td><input type="text" id="xyz" name="last name" placeholder="Last Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age</label></td>
+                <td><input type="number"id="age" name="age" min="1"max="50" step="2"></td>
+            </tr>
+            <tr>
+                <td><label for="ee">Email</label></td>
+                <td><input type="email" id="ee" name="email" placeholder="Email" required></td>
+            </tr>
+            <tr>
+                <td><label for="pq">Password</label></td>
+                <td><input type="password"id="pq"name="Password" placeholder="Password" required></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td><input type="date" id="dob" placeholder="Date of Birth" required></td>
+            </tr>
+            <tr>
+                <td>
+                <label for="gender">Gender</label>
+                </td>
+            <td>
+                <!-- radio->is used to select only one value -->
+            <input type="radio" id="gender" name="gender" value="male" > Male
+             <input type="radio" id="gender" name="gender"  value="female"> Female
+             <input type="radio" id="gender" name="gender" value="others" > Others
+            </td>
+        </tr>
+        <tr>
+            <td><label for="sports">Sports</label></td>
+            <td><input type="checkbox" id="sports" name="sports" value="Cricket">Cricket
+                <input type="checkbox" id="sports" name="sports" value="Football">Football
+                <input type="checkbox" id="sports" name="sports" value="Volleybol">Volleybol
+            </td>
+        </tr>
+        <tr>
+            <td><label for="img">Image</label></td>
+            <td><input type="image"id="img" src="/HTML/images/flowers" height="50px"width="50px"></td>
+        </tr>
+        <tr>
+            <td><label for="file">upload file</label></td>
+            <td><input type="file" id="file" name="file"></td>
+        </tr>
+        <tr>
+            <td>labe</td>
+            <td></td>
+        </tr>
+           <tr>
+            <td><button>Submit</button></td>
+            <td><button>Reset</button></td>
+           </tr>
+          
+        </table>
+    </fieldset>
+    </form>
+</body>
+</html>
